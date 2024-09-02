@@ -1,0 +1,6 @@
+- hosts: web_servers
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Test simple command
+      command: echo "Hello, World!"
