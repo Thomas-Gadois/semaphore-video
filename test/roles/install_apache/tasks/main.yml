@@ -1,0 +1,6 @@
+# roles/install_apache/tasks/main.yml
+---
+- name: Install Apache2 package
+  ansible.builtin.package:
+    name: apache2
+    state: present
